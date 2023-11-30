@@ -6,7 +6,7 @@ const aboutRouter = require("./routers/about.js")
 
 app.use(express.static("public"));
 
-app.use("/about", aboutRouter);
+app.get("/about", aboutRouter);
 app.use("/", homeRouter);
 
 app.listen(3000,() =>{
